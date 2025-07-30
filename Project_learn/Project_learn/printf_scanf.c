@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS 1//用来避免因为scanf()本身的不安全而无法使用该函数，可在newc++file.cpp的文件中增加这行文字来为每一个新建的.c/.cpp文件添加这行文字
-#include<stdio.h>//standard input output
+//#define _CRT_SECURE_NO_WARNINGS 1//用来避免因为scanf()本身的不安全而无法使用该函数，可在newc++file.cpp的文件中增加这行文字来为每一个新建的.c/.cpp文件添加这行文字
+//#include<stdio.h>//standard input output
 //int main()
 //{
 //	printf("hello world");
@@ -84,17 +84,17 @@
 //	printf("%d %d %d", year, month, day);
 //
 //	return 0;
+////}
+//// 
+////为了更方便的键入数据，scanf()提供了一个赋值忽略符*。只要把*加在任何占位符的百分号后边，该占位符就不会返回值，解析后就被丢弃
+//int main()
+//{
+//	int year = 0;
+//	int month = 0;
+//	int day = 0;
+//
+//	scanf("%d%*c%d%*c%d", &year, &month, &day);//这种形式的情况下，键入的数据可以是任何形式，只要是年 月 日这个顺序
+//	printf("%d %d %d", year, month, day);
+//
+//	return 0;
 //}
-// 
-//为了更方便的键入数据，scanf()提供了一个赋值忽略符*。只要把*加在任何占位符的百分号后边，该占位符就不会返回值，解析后就被丢弃
-int main()
-{
-	int year = 0;
-	int month = 0;
-	int day = 0;
-
-	scanf("%d%*c%d%*c%d", &year, &month, &day);//这种形式的情况下，键入的数据可以是任何形式，只要是年 月 日这个顺序
-	printf("%d %d %d", year, month, day);
-
-	return 0;
-}
